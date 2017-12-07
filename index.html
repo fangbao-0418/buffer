@@ -28,9 +28,13 @@
       </div>
   </div>
   <script>
-    var interval = setInterval(function() {
+    // var interval = setInterval(function() {
+    //   document.body.scrollTop = document.body.scrollHeight
+    // }, 100)
+    var el = document.querySelector('.bottomInput input');
+    el.onfocus = function () {
       document.body.scrollTop = document.body.scrollHeight
-    }, 100)
+    }
   </script>
 </body>
 </html>
